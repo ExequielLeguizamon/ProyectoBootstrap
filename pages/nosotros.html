@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!--Link a CSS-->
-    <link rel="stylesheet" href="../bootstrap-local/css/bootstrap.css" />
+    <link rel="stylesheet" href="../estilo.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,20 +23,20 @@
     />
   </head>
 
-  <body>
+  <body id="gridAreas">
     <header>
-      <h1>Sobre nosotros...</h1>
+      <h1 class="navbarTitulo tituloAnimado">Sobre nosotros...</h1>
     </header>
 
-    <section>
+    <section id="imagenes" class="imgNosotros">
       <!--Imagen-->
           <img src="https://placekitten.com/400/300" alt=""/>
     </section>
 
-    <section>
+    <section id="texto">
         <!--Parrafo descriptivo-->
-      <aside>
-        <p>
+      <aside class="flexParrafoNosotros">
+        <p class="textos animate__animated animate__zoomIn">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
           corrupti quisquam, quaerat vero mollitia perspiciatis nam at
           voluptatibus sequi esse culpa, delectus iste voluptas porro tempore!
@@ -55,20 +55,20 @@
     </section>
 
     <!--Menu - Enlaces relativos-->
-    <nav>
+    <nav class="navbarItems">
       <h2>Menu</h2>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./galeria.html">Galeria</a></li>
-        <li><a href="./adopcion.html">Adopción</a></li>
-        <li><a href="./donacion.html">Donación</a></li>
-        <li><a href="./nosotros.html">Nosotros</a></li>
+      <ul class="menuFlex">
+        <li class="navbarItems2"><a href="../index.html">Inicio</a></li>
+        <li class="navbarItems2"><a href="./galeria.html">Galeria</a></li>
+        <li class="navbarItems2"><a href="./adopcion.html">Adopción</a></li>
+        <li class="navbarItems2"><a href="./donacion.html">Donación</a></li>
+        <li class="navbarItems2"><a href="./nosotros.html">Nosotros</a></li>
       </ul>
     </nav>
 
     <footer>
       <p>SOS Felinos Tucumán - 2022</p>
-      <ul>
+      <ul class="footerItems">
         <!--Enlaces absolutos-->
         <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
         <li>

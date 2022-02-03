@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!--Link a CSS-->
-    <link rel="stylesheet" href="./bootstrap-local/css/bootstrap.css" />
+    <link rel="stylesheet" href="./estilo.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,12 +23,12 @@
     />
   </head>
 
-  <body>
+  <body id="gridAreas">
     <header>
-      <h1>SOS Felinos Tucumán</h1>
+      <h1 class="navbarTitulo tituloAnimado">SOS Felinos Tucumán</h1>
     </header>
 
-    <section >
+    <section id="imagenes">
       <!--Video Youtube-->
       <iframe
         class="video"
@@ -42,9 +42,9 @@
       ></iframe>
     </section>
 
-    <section>
+    <section id="texto">
       <!--Parrafo de texto-->
-      <p>
+      <p class="textos animate__animated animate__zoomIn">
         <br /><br />
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
         debitis assumenda odit unde necessitatibus aut, saepe libero tempore
@@ -63,18 +63,18 @@
     </section>
 
     <!--Menu - Enlaces relativos-->
-    <nav >
+    <nav class="navbarItems">
       <h2>Menu</h2>
-      <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./pages/galeria.html">Galeria</a></li>
-        <li>
+      <ul class="menuFlex">
+        <li class="navbarItems2"><a href="./index.html">Inicio</a></li>
+        <li class="navbarItems2"><a href="./pages/galeria.html">Galeria</a></li>
+        <li class="navbarItems2">
           <a href="./pages/adopcion.html">Adopción</a>
         </li>
-        <li>
+        <li class="navbarItems2">
           <a href="./pages/donacion.html">Donación</a>
         </li>
-        <li>
+        <li class="navbarItems2">
           <a href="./pages/nosotros.html">Nosotros</a>
         </li>
       </ul>
@@ -82,7 +82,7 @@
 
     <footer>
       <p>SOS Felinos Tucumán - 2022</p>
-      <ul>
+      <ul class="footerItems">
         <!--Enlaces absolutos-->
         <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
         <li>

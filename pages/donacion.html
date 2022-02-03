@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!--Link a CSS-->
-    <link rel="stylesheet" href="../bootstrap-local/css/bootstrap.css" />
+    <link rel="stylesheet" href="../estilo.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,14 +23,14 @@
     />
   </head>
 
-  <body>
+  <body id="gridAreas">
     <header>
       <h1 class="navbarTitulo tituloAnimado">Donación</h1>
     </header>
 
-    <section>
+    <section id="imagenes">
         <!--Formulario de donación-->
-        <form action="">
+        <form action="" class="centrar formulario">
             <h2>Donación</h2>
             <label for="importe">Importe $</label>
             <input type="number" id="importe"><br>
@@ -48,28 +48,28 @@
           </form>
     </section>
 
-    <section>
+    <section id="texto" >
       <br><br>
-      <p>Cada donación sera destinada para la mejora y abastecimiento del refugio, ademas de cubrir los gastos medicos de cada minino.</p>
-      <p>¡¡GRACIAS POR TU AYUDA!!</p>
+      <p class="textoDonacion">Cada donación sera destinada para la mejora y abastecimiento del refugio, ademas de cubrir los gastos medicos de cada minino.</p>
+      <p class="textoDonacion">¡¡GRACIAS POR TU AYUDA!!</p>
     </section>
 
 
     <!--Menu - Enlaces relativos-->
-    <nav>
+    <nav class="navbarItems">
       <h2>Menu</h2>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./galeria.html">Galeria</a></li>
-        <li><a href="./adopcion.html">Adopción</a></li>
-        <li><a href="./donacion.html">Donación</a></li>
-        <li><a href="./nosotros.html">Nosotros</a></li>
+      <ul class="menuFlex">
+        <li class="navbarItems2"><a href="../index.html">Inicio</a></li>
+        <li class="navbarItems2"><a href="./galeria.html">Galeria</a></li>
+        <li class="navbarItems2"><a href="./adopcion.html">Adopción</a></li>
+        <li class="navbarItems2"><a href="./donacion.html">Donación</a></li>
+        <li class="navbarItems2"><a href="./nosotros.html">Nosotros</a></li>
       </ul>
     </nav>
 
     <footer>
       <p>SOS Felinos Tucumán - 2022</p>
-      <ul>
+      <ul class="footerItems">
         <!--Enlaces absolutos-->
         <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
         <li>
