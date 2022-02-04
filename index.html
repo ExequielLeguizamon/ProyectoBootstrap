@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Link a CSS Bootstrap-->
+    <link rel="stylesheet" href="./bootstrap-local/css/bootstrap.css">
+    <!--Link a JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!--Link a CSS-->
     <link rel="stylesheet" href="./estilo.css" />
     <meta charset="UTF-8" />
@@ -23,73 +27,80 @@
     />
   </head>
 
-  <body id="gridAreas">
-    <header>
-      <h1 class="navbarTitulo tituloAnimado">SOS Felinos Tucumán</h1>
-    </header>
-
-    <section id="imagenes">
-      <!--Video Youtube-->
-      <iframe
-        class="video"
-        width="98%"
-        height="100%"
-        src="https://www.youtube.com/embed/gjwrV2haTWA"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </section>
-
-    <section id="texto">
-      <!--Parrafo de texto-->
-      <p class="textos animate__animated animate__zoomIn">
-        <br /><br />
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-        debitis assumenda odit unde necessitatibus aut, saepe libero tempore
-        maiores perspiciatis, alias exercitationem voluptas error corporis quasi
-        labore facilis iusto aperiam. Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Eum quod ut ipsam quas magni eaque fuga. Minima
-        delectus suscipit maxime necessitatibus. Impedit facere debitis dolorem
-        est, sit consectetur at praesentium. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Fugit quae soluta tenetur temporibus vel
-        placeat in at optio ab rem repudiandae amet sint provident aut enim
-        sapiente, voluptas minus cum. Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Ut totam praesentium nesciunt architecto eum dolorum
-        facilis voluptas soluta nostrum sapiente, possimus dolorem eaque
-        perspiciatis optio excepturi sit! Eveniet, labore consequuntur!
-      </p>
-    </section>
-
-    <!--Menu - Enlaces relativos-->
-    <nav class="navbarItems">
-      <h2>Menu</h2>
-      <ul class="menuFlex">
-        <li class="navbarItems2"><a href="./index.html">Inicio</a></li>
-        <li class="navbarItems2"><a href="./pages/galeria.html">Galeria</a></li>
-        <li class="navbarItems2">
-          <a href="./pages/adopcion.html">Adopción</a>
-        </li>
-        <li class="navbarItems2">
-          <a href="./pages/donacion.html">Donación</a>
-        </li>
-        <li class="navbarItems2">
-          <a href="./pages/nosotros.html">Nosotros</a>
-        </li>
-      </ul>
-    </nav>
-
-    <footer>
-      <p>SOS Felinos Tucumán - 2022</p>
-      <ul class="footerItems">
-        <!--Enlaces absolutos-->
-        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        <li>
-          <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </li>
-        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-      </ul>
-    </footer>
+  <body class="container-fluid">
+    <main class="row">
+      <!--Header-->
+      <header class="col">
+        <h1 class="navbarTitulo tituloAnimado">SOS Felinos Tucumán</h1>
+      </header>
+     
+      <!--Menu-->
+      <nav class="navbar navbar-dark bg-primary navbar-expand-lg col">
+        <nav class="navbar navbar-light bg-light"></nav>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+         <li class="nav-item navbarItems"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
+         <li class="nav-item navbarItems"><a class="nav-link active" href="./pages/galeria.html">Galeria</a></li>
+         <li class="nav-item navbarItems"><a class="nav-link active" href="./pages/adopcion.html">Adopción</a></li>
+         <li class="nav-item navbarItems"><a class="nav-link active" href="./pages/donacion.html">Donación</a></li>
+         <li class="nav-item navbarItems"><a class="nav-link active" href="./pages/nosotros.html">Nosotros</a></li>
+        </ul>
+      </div>
+      </nav>
+     </div>
+     </main>
+  
+     <!--Video Youtube-->
+      <section class="row">
+        <iframe
+          class="video col"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/gjwrV2haTWA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+  
+        <!--Parrafo de texto-->
+        <section class="row">
+        <p class="textos animate__animated animate__zoomIn text-center col">
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+          debitis assumenda odit unde necessitatibus aut, saepe libero tempore
+          maiores perspiciatis, alias exercitationem voluptas error corporis quasi
+          labore facilis iusto aperiam. Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Eum quod ut ipsam quas magni eaque fuga. Minima
+          delectus suscipit maxime necessitatibus. Impedit facere debitis dolorem
+          est, sit consectetur at praesentium. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Fugit quae soluta tenetur temporibus vel
+          placeat in at optio ab rem repudiandae amet sint provident aut enim
+          sapiente, voluptas minus cum. Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Ut totam praesentium nesciunt architecto eum dolorum
+          facilis voluptas soluta nostrum sapiente, possimus dolorem eaque
+          perspiciatis optio excepturi sit! Eveniet, labore consequuntur!
+        </p>
+      </section>
+ 
+      <!--Footer-->
+      <footer class="row">
+        <div class="container-fluid col">
+          <a class="navbar-brand" href="./index.html">
+          <img src="./img/favicon.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">S.O.S Felinos Tucumán</a>
+        </div>
+        <ul class="footerItems col">
+          <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          </li>
+          <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+        </ul>
+      </footer>
   </body>
 </html>

@@ -7,10 +7,9 @@
 
 /***** RESPONSIVE *****/
 /*** Smartphones ***/
-
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
     background-color: #bcd4e6;
 }
 
@@ -21,22 +20,8 @@ body {
 }
 
 .navbarItems a:hover {
-    color: red;
     font-size: 2rem;
     text-transform: uppercase;
-}
-
-.navbarItems {
-    font-weight: bold;
-    font-size: 20px;
-    list-style-type: none;
-    background-color: #fad2e1;
-}
-
-h2 {
-    text-decoration: underline;
-    color: black;
-    text-shadow: 2px 2px 5px white;
 }
 
 /* Estilos header */
@@ -55,7 +40,9 @@ header {
 /* Estilos iframe */
 .video {
     border: outset 4px white;
-    height: 100%;
+    height: 50vh;
+    width: 50vh;
+    margin-top: 10px;
 }
 
 /* Estilos textos */
@@ -73,12 +60,28 @@ header {
     font-weight: bold;
     margin: 10%;
     text-shadow: 1px 2px #e7e5e5;
-    color: rgba(233, 20, 20, 0.918);
+    color: rgba(255, 1, 213, 0.918);
+}
+
+/*Estilos carrusel e imagenes*/
+.Carrusel {
+    border: outset pink 5px;
+    background-color: white;
+}
+
+.imgNosotros {
+    width: 25vh;
+    height: 25vh;
+    padding: 2px;
+    margin-left: 25%;
+    margin-top: 10px;
+    border: outset pink 5px;
+    background-color: white;
 }
 
 /* Estilos footer */
 footer {
-    background-color: grey;
+    background-color: rgb(187, 159, 159);
     text-decoration: none;
     color: white;
     padding: 3px;
@@ -87,37 +90,8 @@ footer {
 }
 
 .footerItems {
-    background-color: grey;
     text-align: end;
     list-style: none;
-}
-
-footer li {
-    display: inline-block;
-}
-
-/*  Estilos galeria */
-.card {
-    background-color: #f6a5f2;
-    width: 80%;
-    margin: 1rem;
-    border: outset 4px #fde2e4;
-    position: relative;
-}
-
-article {
-    background-color: #fff;
-    border-radius: 5px;
-    margin: 5px;
-    text-align: center;
-    font-size: 0.75rem;
-}
-
-.nombres {
-    color: grey;
-    background-color: lavenderblush;
-    font-size: 1.5rem;
-    margin: 10px;
 }
 
 /* Estilos formularios */
@@ -129,124 +103,43 @@ article {
 }
 
 /***** FLEXBOX *****/
-.menuFlex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-.imgNosotros {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.flexParrafoNosotros {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-}
-
-.galeria {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-}
-
 .centrar {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
 }
 
-
-/*** Animacion ***/
+/*** ANIMACION ***/
 .tituloAnimado {
     animation-name: tituloAnimado;
     animation-iteration-count: 1;
-    animation-duration: 2s;    
+    animation-duration: 2s;
+}
+
+@keyframes tituloAnimado {
+    from {
+        transform: translate(-500px);
+        opacity: 0;
     }
 
-   @keyframes tituloAnimado {
-       from {
-           transform: translate(-500px);
-           opacity: 0;
-       }
-       
-       to{
-           transform: translate(0);
-           opacity: 1;
-        }
-    }   
-
-/***** GRIDS POR AREAS *****/
-/* Estructura */
-#gridAreas {
-    display: grid;
-    grid-template-areas:
-        "navegador"
-        "header"
-        "imagenes"
-        "texto"
-        "footer";
-
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 70px 1fr 1fr 75px;
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
 }
-
-/* Nombre areas */
-header {
-    grid-area: header;
-}
-
-footer {
-    grid-area: footer;
-}
-
-section #imagenes {
-    grid-area: imagenes;
-}
-
-section #texto {
-    grid-area: texto;
-}
-
-nav {
-    grid-area: navegador;
-}
-
-
-
-
 
 /*** Tablets ***/
 
 @media (min-width: 480px) and (max-width: 1023px) {
 
     body {
-        width: 100%;
-        height: 100%;
+        width: 100vh;
+        height: 100vh;
         background-color: #deebdd;
         background-image: linear-gradient(315deg, #deebdd 0%, #bbdbbe 74%);
     }
 
-    /***** GRIDS POR AREAS *****/
-    /* Estructura */
-    #gridAreas {
-        display: grid;
-        grid-template-areas:
-            "navegador header"
-            "navegador imagenes"
-            "navegador texto"
-            "footer footer";
-
-        grid-template-columns: 15% 85%;
-        grid-template-rows: 50px 80% auto 70px;
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
-    }
+    /*Estilos header*/
 
     header {
         border: dashed #a8dadc 2px;
@@ -258,23 +151,11 @@ nav {
     /* Estilos Menu */
     .navbarItems a {
         text-decoration: none;
-        color: #77dd77;
+        color: black;
     }
 
     .navbarItems a:hover {
-        color: red;
-        font-size: 1rem;
-    }
-
-    .navbarItems {
-        background-color: #fdfd96;
-        border: dashed #a8dadc 2px;
-        position: relative;
-    }
-
-    .navbarItems2 {
-        text-align: start;
-        list-style: none;
+        font-size: 1.5rem;
     }
 
     .navbarTitulo {
@@ -285,12 +166,10 @@ nav {
 
     /* Estilos iframe */
     .video {
-        background-color: white;
-        border: dashed 4px #a8dadc;
-        padding: 5px;
-        width: 80%;
-        height: 100%;
-        margin-left: 50px;
+        border: outset 4px white;
+        height: 50vh;
+        width: 50vh;
+        margin-top: 10px;
     }
 
     /* Estilos textos */
@@ -322,88 +201,12 @@ nav {
         margin: 3px;
         border: double black 5px;
     }
-
-    .footerItems {
-        background-color: grey;
-        text-align: end;
-        list-style: none;
-    }
-
-    footer li {
-        display: inline-block;
-    }
-
-    /*  Estilos galeria */
-    .card {
-        background-color: white;
-        width: 45%;
-        margin-left: 25%;
-        border: dashed 4px #a8dadc;
-        position: relative;
-    }
-
-    article {
-        background-color: #fff;
-        border-radius: 5px;
-        margin: 5px;
-        text-align: center;
-        font-size: 0.75rem;
-    }
-
-    .nombres {
-        color: grey;
-        font-size: 2rem;
-        margin: 5px;
-        background-color: #dbf6d8;
-    }
-
-    /* Estilos formularios */
-    .formulario {
-        background-color: lightgrey;
-        border: 15px solid red;
-        padding: 50px;
-        margin: 50px;
-    }
-
-    /***** FLEXBOX *****/
-    .menuFlex {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: end;
-    }
-
-    .imgNosotros {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-
-    .flexParrafoNosotros {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-    }
-
-    .galeria {
-        display: flex;
-        flex-flow: column nowrap;
-    }
-
 }
-
 
 
 /*** Desktop ***/
 
 @media (min-width: 1024px) {
-
-    body {
-        width: 100vh;
-        height: 100vh;
-        background-color: #bcd4e6;
-    }
 
     header {
         background-color: #63a4ff;
@@ -412,30 +215,6 @@ nav {
     }
 
     /* Estilos Menu */
-    .navbarItems a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .navbarItems a:hover {
-        color: red;
-        font-size: 1.5rem;
-    }
-
-    .navbarItems {
-        list-style: none;
-        background-color: #ffd9de;
-        background-image: linear-gradient(315deg, #ffd9de 0%, #e99ba6 74%);
-    }
-
-    .navbarItems2 {
-        text-align: center;
-        margin: 20px;
-        background-image: url("http://placekitten.com/250/303");
-        background-repeat: repeat;
-        background-position: center;
-    }
-
     .navbarTitulo {
         color: #560bad;
         display: inline-block;
@@ -448,8 +227,9 @@ nav {
         border: outset 4px #fde2e4;
         padding: 5px;
         margin-left: 5%;
+        margin-right: 5%;
         width: 100vh;
-        height: 100%;
+        height: 50vh;
     }
 
     /* Estilos textos */
@@ -472,50 +252,21 @@ nav {
         color: rgba(233, 20, 162, 0.918);
     }
 
-    /* Estilos footer */
-    footer {
-        background-color: grey;
-        text-decoration: none;
-        color: white;
-        padding: 3px;
-        margin: 3px;
-        border: double black 5px;
+
+    /*Estilos carrusel e imagenes*/
+    .Carrusel {
+        border: outset pink 5px;
+        background-color: white;
     }
 
-    .footerItems {
-        background-color: grey;
-        text-align: end;
-        list-style: none;
-
-    }
-
-    footer li {
-        display: inline-block;
-    }
-
-    /*  Estilos galeria */
-    .card {
-        background-color: #f6a5f2;
-        width: 20vh;
-        margin: 1rem;
-        border: outset 4px #fde2e4;
-        position: relative;
-    }
-
-    article {
-        background-color: #fff;
-        border-radius: 5px;
-        margin: 5px;
-        text-align: center;
-        font-size: 0.75rem;
-    }
-
-    .nombres {
-        color: grey;
-        background-color: lavenderblush;
-        font-size: 1.5rem;
-        margin: 5px;
-        text-align: center;
+    .imgNosotros {
+        width: 50%;
+        height: 50%;
+        padding: 2px;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: outset pink 5px;
+        background-color: white;
     }
 
     /* Estilos formularios */
@@ -526,53 +277,30 @@ nav {
         margin: 50px;
     }
 
+    /* Estilos footer */
+footer {
+    background-color: lightgray;
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    margin: 3px;
+    border: double black 5px;
+}
+
+.footerItems {
+    text-align: end;
+    list-style: none;
+}
+
+footer li {
+    display: inline-block;
+}
+
 
     /***** FLEXBOX *****/
-    .menuFlex {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: end;
-    }
-
-    .imgNosotros {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-
-    .flexParrafoNosotros {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-    }
-
-    .galeria {
-        display: flex;
-        flex-flow: column nowrap;
-        display: inline-block;
-        justify-content: space-evenly;
-    }
-
     .centrar {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-    }
-
-
-    /***** GRIDS POR AREAS *****/
-    /* Estructura */
-    #gridAreas {
-        display: grid;
-        grid-template-areas:
-            "header header"
-            "navegador imagenes"
-            "navegador texto"
-            "footer footer";
-
-        grid-template-columns: 20% 115%;
-        grid-template-rows: 50px 60% 60% 70px;
     }
 }

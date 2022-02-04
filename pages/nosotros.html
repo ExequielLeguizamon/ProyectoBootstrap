@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Link a CSS Bootstrap-->
+    <link rel="stylesheet" href="../bootstrap-local/css/bootstrap.css">
+    <!--Link a JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!--Link a CSS-->
     <link rel="stylesheet" href="../estilo.css" />
     <meta charset="UTF-8" />
@@ -23,20 +27,41 @@
     />
   </head>
 
-  <body id="gridAreas">
-    <header>
-      <h1 class="navbarTitulo tituloAnimado">Sobre nosotros...</h1>
-    </header>
+  <body class="container-fluid">
+    <main class="row">
+      <!--Header-->
+      <header class="col">
+        <h1 class="navbarTitulo tituloAnimado">Sobre nosotros...</h1>
+      </header>
+        <!--Menu-->
+        <nav class="navbar navbar-dark bg-primary navbar-expand-lg col">
+          <nav class="navbar navbar-light bg-light"></nav>
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+           <li class="nav-item navbarItems"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+           <li class="nav-item navbarItems"><a class="nav-link active" href="./galeria.html">Galeria</a></li>
+           <li class="nav-item navbarItems"><a class="nav-link active" href="./adopcion.html">Adopción</a></li>
+           <li class="nav-item navbarItems"><a class="nav-link active" href="./donacion.html">Donación</a></li>
+           <li class="nav-item navbarItems"><a class="nav-link active" href="./nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+        </nav>
+           </div>
+    </main>
 
-    <section id="imagenes" class="imgNosotros">
-      <!--Imagen-->
+
+    <!--Imagen-->
+    <section class="imgNosotros row">
           <img src="https://placekitten.com/400/300" alt=""/>
     </section>
 
-    <section id="texto">
-        <!--Parrafo descriptivo-->
-      <aside class="flexParrafoNosotros">
-        <p class="textos animate__animated animate__zoomIn">
+    <!--Parrafo descriptivo-->
+    <section class="row">
+        <p class="textos animate__animated animate__zoomIn col">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
           corrupti quisquam, quaerat vero mollitia perspiciatis nam at
           voluptatibus sequi esse culpa, delectus iste voluptas porro tempore!
@@ -54,22 +79,13 @@
         </p>
     </section>
 
-    <!--Menu - Enlaces relativos-->
-    <nav class="navbarItems">
-      <h2>Menu</h2>
-      <ul class="menuFlex">
-        <li class="navbarItems2"><a href="../index.html">Inicio</a></li>
-        <li class="navbarItems2"><a href="./galeria.html">Galeria</a></li>
-        <li class="navbarItems2"><a href="./adopcion.html">Adopción</a></li>
-        <li class="navbarItems2"><a href="./donacion.html">Donación</a></li>
-        <li class="navbarItems2"><a href="./nosotros.html">Nosotros</a></li>
-      </ul>
-    </nav>
-
-    <footer>
-      <p>SOS Felinos Tucumán - 2022</p>
-      <ul class="footerItems">
-        <!--Enlaces absolutos-->
+    <!--Footer-->
+    <footer class="row">
+      <div class="container-fluid col">
+        <a class="navbar-brand" href="../index.html">
+        <img src="../img/favicon.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">S.O.S Felinos Tucumán</a>
+      </div>
+      <ul class="footerItems col">
         <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
         <li>
           <a href="https://www.instagram.com" target="_blank">Instagram</a>
